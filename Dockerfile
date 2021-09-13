@@ -10,4 +10,4 @@ COPY . .
 
 RUN yarn run build
 
-CMD ["yarn", "run", "dev:vscode"]
+CMD ["yarn", "run", "start"]
