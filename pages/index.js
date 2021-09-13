@@ -1,15 +1,16 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
+import axios from 'axios';
 
 export default function Home() {
-  const handleFetchClick = () => {
+  const handleFetchClick = async () => {
     const result = await fetch("api/test", {
       method: "PUT",
     });
     console.log(result);
   };
 
-  const handleAxiosClick = () => {
+  const handleAxiosClick = async () => {
     const result = await axios("api/test", {
       method: "PUT",
     });
