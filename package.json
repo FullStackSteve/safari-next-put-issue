@@ -4,6 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+    "dev:vscode": "NODE_OPTIONS='--inspect' next dev",
+    "dev:docker": "docker-compose up -d",
+    "dev:docker-clean": "docker-compose down --remove-orphans && docker-compose build --pull && docker-compose up -d",
     "build": "next build",
     "start": "next start"
   },
